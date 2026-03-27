@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Expense Project</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Create Group</h3>
+        <input type="text" id="groupName" placeholder="Enter group name">
+        <button onclick="createGroup()">Create Group</button>
+
+        <h3>Select Group</h3>
+        <select id="groupSelect" onchange="switchGroup()"></select>
+    </div>
+
+    <div class="card">
+        <h3>Add Member</h3>
+        <input type="text" id="name" placeholder="Enter name">
+        <button onclick="addMember()">Add</button>
+        <ul id="members"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Add Expense</h3>
+        <input type="number" id="amount" placeholder="Amount">
+        <input type="text" id="desc" placeholder="Description">
+        <select id="paidBy"></select>
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="card">
+        <h3>Expenses</h3>
+        <ul id="expenseList"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Balances</h3>
+        <div id="balances"></div>
+    </div>
+
+    <div class="card">
+        <h3>Settlements</h3>
+        <div id="settlements"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
